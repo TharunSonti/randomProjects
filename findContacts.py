@@ -59,8 +59,7 @@ print newLinks
 i = -1
 failedToFind = []
 
-# when we fail to find a contact link then we end up with an empty list e.g. [["random1"], [], ["random2"]]
-#which is a problem later
+# when we fail to find a contact link then we end up with an empty list e.g. [["random1"], [], ["random2"]] #which is a problem for later
 for string in newLinks:            # for each valid homepage link
     i = i + 1                   # try this at the start of the loop for once/fun
     
