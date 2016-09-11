@@ -7,7 +7,6 @@ import time
 oldurl = "https://www.livebelowtheline.com.au/leaderboards/all_participants?page=1"
 url = "https://www.livebelowtheline.com.au/leaderboards/all_participants?page="
 
-
 t0 = time.time() 
 
 html = urlopen(oldurl).read()
@@ -112,7 +111,6 @@ with open('results.txt', 'w') as f:
     f.write('The Unknown Tally is ' + str(unknownTally) + '. ')
     f.write('Their names are: ' + str(unknownNames) + '\n')
     f.write('The total is: ' + str(total))
-
 
 t1 = time.time()
 totalTime = t1-t0
